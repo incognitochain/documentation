@@ -22,7 +22,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/khanhlh-incognito/incognito-document-prod/tree/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -49,7 +49,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/khanhlh-incognito/incognito-document-prod/tree/master',
             label: 'GitHub',
             position: 'right',
           },
@@ -89,7 +89,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Facebook',
                 href: '#',
-              },			  
+              },
             ],
           },
           {
@@ -110,7 +110,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Android .APK',
                 href: 'https://github.com/incognitochain/incognito-wallet/releases',
-              },			  
+              },
             ],
           },
         ],
