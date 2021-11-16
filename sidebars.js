@@ -30,7 +30,7 @@ module.exports = {
       type: 'category',
       label: 'Tech',
       items: [
-        'Scalability': ['Slashing.md'],
+        ['Slashing.md'],
       ],
       // items: ['Introduction.md', 'Shielding Cryptocurrencies', 'trustless custodians', 'sending cryptocurrencies confidentially', 'dynamic sharding', 'consensus', 'software stack', 'network performance', 'Network Incentive', 'User Created Privacy Tokens', 'Use Cases', 'Future Work', 'Conclusions, Acknowledgments, and References'],
     },
