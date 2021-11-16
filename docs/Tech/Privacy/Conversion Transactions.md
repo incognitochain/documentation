@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Full-nodes' Cache - A Faster Way to Retrieve Users' Output Coins
+title: Conversion Transactions
 nav_order: 13
 parent: Privacy
 ---
@@ -71,5 +71,3 @@ $ incognito-cli convert --privateKey YOUR_PRIVATE_KEY --tokenID --numThreads 10
 
 ## Conclusion
 Conversion transactions are the portal to the [Privacy V2](https://we.incognito.org/t/introduction-to-privacy-v2/12776) world where you can truly go incognito. However, the way to that utopian world costs you some sort of privacy. This amount of privacy is just the same as a regular v1 trade transaction or a shielding, un-shielding transaction that you have been doing until now. Therefore, in the end, it does not cost that much. In the next post, we'll explain how [Privacy V2](https://we.incognito.org/t/introduction-to-privacy-v2/12776) affects pDEX trading transactions.
-
-## [pDEX Trade with Privacy V2 ▸](https://we.incognito.org/t/pdex-trade-with-privacy-v2/12957)

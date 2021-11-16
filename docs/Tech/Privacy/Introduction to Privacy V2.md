@@ -169,7 +169,3 @@ Now, the public keys of Alice’s output coins are different and do not follow a
 However, the benefits of increased privacy are not without costs. The use of OTAs results in retrieving output coins becoming more difficult. In Privacy V1, a user's output coins all have the same public key, which is the user's public key. In this way, a full-node's database can effortlessly aggregate these output coins. When a user requests all of his or her output coins, the full-node only needs to look for those that have the same public key. With Privacy V2, this no longer holds true. Different public keys will now be assigned to each of a user's output coins. As a result, the full-node is unable to determine if two output coins belong to the same or separate users. And thus, it will not be able to respond to a user's request for his/her output coins.
 
 In the next post, we will give a solution to this problem.
-
-## [Full-nodes' Cache - A Faster Way to Retrieve Users' Output Coins ▸](https://we.incognito.org/t/full-nodes-cache-a-faster-way-to-retrieve-users-output-coins/12810)
-## [Conversion Transactions ▸](https://we.incognito.org/t/conversion-transactions/12885)
-## [pDEX Trade with Privacy V2 ▸](https://we.incognito.org/t/pdex-trade-with-privacy-v2/12957)

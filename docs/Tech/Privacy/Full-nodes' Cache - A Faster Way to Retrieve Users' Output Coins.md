@@ -143,6 +143,3 @@ For active caching, you can use the community full-node with the following infor
 
 * Endpoint: https://beta-fullnode.incognito.org/fullnode
 * Access token: `0ec910a54ffbf2a0bdfc0c8b05e8b5445e51a2ae54f659a35ac7ad9980e4fd2c`
-
-## [Conversion Transactions ▸](https://we.incognito.org/t/conversion-transactions/12885)
-## [pDEX Trade with Privacy V2 ▸](https://we.incognito.org/t/pdex-trade-with-privacy-v2/12957)

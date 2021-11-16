@@ -1,8 +1,6 @@
 ---
-layout: default
-title: Incognito Software Stack - Navigating the Incognito Source Code
-nav_order: 2
-parent: Tech
+sidebar_position: 3
+sidebar_label: Incognito Software Stack - Navigating the Incognito Source Code
 ---
 
 # Incognito Software Stack 

@@ -1,8 +1,6 @@
 ---
-layout: default
-title: Network Incentive - Privacy (PRV) Mining & Distribution
-nav_order: 3
-parent: Tech
+sidebar_position: 3
+sidebar_label: Network Incentive - Privacy (PRV) Mining & Distribution
 ---
 
 

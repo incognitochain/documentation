@@ -1,12 +1,10 @@
 ---
-layout: default
-title: Scaling Blockchain Privacy with Dynamic Sharding
-nav_order: 4
-parent: Consensus
+sidebar_position: 4
+sidebar_label: Scaling Blockchain Privacy with Dynamic Sharding
 ---
 
 
-# Scaling Blockchain Privacy with Dynamic Sharding ▾
+# Scaling Blockchain Privacy with Dynamic Sharding
 
 Low-throughput is one of the biggest obstacles facing the mass adoption of cryptocurrencies. Throughput is measured by the number of transactions per second (TPS) confirmed on a cryptonetwork. For example, Bitcoin can only process 7-10 TPS [Croman et al., 2016; Li et al., 2018], while Visa can process 24,000 TPS [Visa, 2018].
 
