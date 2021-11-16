@@ -99,7 +99,7 @@ Observation 1. If block bn is finality, then further blocks are appended to the 
 
 where bn+1 and b’n+1 are finality, and if bn+1 = b’n+1 then bi = b’i for i[n].
 
-*Proof*. bn+1 and b’n+1 are finality, which means that bn and b’n are finality, if bn <> b’n, which either violates Observation 1 or the assumption that ⅔ participants are honest. 𑃰
+*Proof*. bn+1 and b’n+1 are finality, which means that bn and b’n are finality, if bn ≠ b’n, which either violates Observation 1 or the assumption that ⅔ participants are honest. 𑃰
 
 **Theorem 2** (Liveness proof). If some honest participant receives some transactions, this transaction will eventually be included in all honest participants’ finalized chains.
 
