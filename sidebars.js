@@ -21,17 +21,24 @@
 
 module.exports = {
   mySidebar: [
-    {
-      type: 'category',
-      label: 'Home 123',
-      items: ['intro'],
+    'Tech': {
+      'Scalability': {
+        'Slashing.md',
+      }
     },
-    {
-      type: 'category',
-      label: 'Tech',
-      items: [
-        ['Slashing.md'],
-      ],
+
+    // {
+    //   type: 'category',
+    //   label: 'Home 123',
+    //   items: ['intro'],
+    // },
+
+    // {
+    //   type: 'category',
+    //   label: 'Tech',
+    //   items: [
+    //     ['Slashing.md'],
+    //   ],
       // items: ['Introduction.md', 'Shielding Cryptocurrencies', 'trustless custodians', 'sending cryptocurrencies confidentially', 'dynamic sharding', 'consensus', 'software stack', 'network performance', 'Network Incentive', 'User Created Privacy Tokens', 'Use Cases', 'Future Work', 'Conclusions, Acknowledgments, and References'],
     },
   ],
