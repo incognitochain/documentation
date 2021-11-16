@@ -1,10 +1,17 @@
-We are happy to announce a new feature on Incognito that brings PRV to both Ethereum and Binance Smart Chain (BSC). In the past, PRV - a native token of Incognito was only used inside the Incognito network, but now people can own, send and receive PRV in external networks such as Ethereum and BSC. This still maintains PRV’s hard cap around 100M by using mint & burn mechanism that’s quite similar to the [Incognito-Ethereum trustless bridge](https://we.incognito.org/t/incognito-mode-for-ethereum/53).
+---
+layout: default
+title: Ethereum and BSC bridges for PRV
+nav_order: 19
+parent: Interoperability
+---
+
+In the past, PRV - a native token of Incognito was only used inside the Incognito network, but now people can own, send and receive PRV in external networks such as Ethereum and BSC. This still maintains PRV’s hard cap around 100M by using mint & burn mechanism that’s quite similar to the [Incognito-Ethereum trustless bridge](https://we.incognito.org/t/incognito-mode-for-ethereum/53).
 
 ## PRV in Incognito to PRV in Ethereum (ERC20) or BSC (BEP20)
 
 The main idea is pretty simple: burn PRV in the Incognito and mint PRV (ERC20 or BEP20) in an external network with 1:1 ratio. The process is shown in the following diagram:
 
-![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/2/2265af444cd7427be97a80cb5aac7f1e78e940d2.jpeg) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/2/2265af444cd7427be97a80cb5aac7f1e78e940d2.jpeg)
 
 ### Step 1: Burn PRV in Incognito
 
@@ -26,7 +33,7 @@ The smart contract verifies the burn-proof. If it is valid, the smart contract w
 
 Conversely, one can burn their PRV in Ethereum or BSC to mint back PRV in Incognito with 1:1 ratio. The process is shown in the following diagram:
 
-![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/0/0ee674148ad1ded6c2a9d4da8764e2d9fa5de17e.jpeg) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/0/0ee674148ad1ded6c2a9d4da8764e2d9fa5de17e.jpeg)
 
 ### Step 1: Burn PRV (ERC20 or BEP20)
 
