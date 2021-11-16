@@ -1,10 +1,7 @@
 ---
-layout: default
-title: Multiview - a new approach for PBFT implementation
-nav_order: 6
-parent: Consensus
+sidebar_position: 6
+sidebar_label: Multiview - a new approach for PBFT implementation
 ---
-
 
 **Multiview: a new approach for PBFT implementation**
 

@@ -1,8 +1,6 @@
 ---
-layout: default
-title: Slashing
-nav_order: 8
-parent: Scalability
+sidebar_position: 7
+sidebar_label: Slashing
 ---
 
 

@@ -1,8 +1,6 @@
 ---
-layout: default
-title: Staking Flow
-nav_order: 9
-parent: Scalability
+sidebar_position: 8
+sidebar_label: Staking Flow
 ---
 
 

@@ -1,8 +1,6 @@
 ---
-layout: default
-title: Performance
-nav_order: 7
-parent: Scalability
+sidebar_position: 9
+sidebar_label: Performance
 ---
 
 
