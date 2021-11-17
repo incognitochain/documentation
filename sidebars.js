@@ -24,18 +24,19 @@ module.exports = {
     'intro',
     'software-stack',
     'network-incentive',
-    'Tech': [
-      {
-        'Scalability': [
-          'Tech/Scalability/scaling-blockchain',
-          'Tech/Scalability/combination-etc',
-          'Tech/Scalability/multiview',
-          'Tech/Scalability/slashing',
-          'Tech/Scalability/staking-flow',
-          'Tech/Scalability/performance',
-        ]
-      },
-    ],
-
+    {
+      'Tech': [
+        {
+          'Scalability': [
+            'Tech/Scalability/scaling-blockchain',
+            'Tech/Scalability/combination-etc',
+            'Tech/Scalability/multiview',
+            'Tech/Scalability/slashing',
+            'Tech/Scalability/staking-flow',
+            'Tech/Scalability/performance',
+          ]
+        },
+      ],
+    },
   ],
 };
