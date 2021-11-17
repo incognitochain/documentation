@@ -23,7 +23,7 @@ module.exports = {
   mySidebar: {
     'intro',
     'software-stack',
-    'network-incentive'
+    'network-incentive',
     'Tech': [
       {
         'Scalability': [
