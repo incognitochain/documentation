@@ -1,6 +1,5 @@
 ---
-sidebar_position: 3
-sidebar_label: Incognito Software Stack - Navigating the Incognito Source Code
+id: software-stack
 ---
 
 # Incognito Software Stack 

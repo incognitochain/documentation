@@ -1,6 +1,5 @@
 ---
-sidebar_position: 4
-sidebar_label: Scaling Blockchain Privacy with Dynamic Sharding
+id: scaling-blockchain
 ---
 
 

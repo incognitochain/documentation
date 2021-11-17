@@ -1,6 +1,5 @@
 ---
-sidebar_position: 5
-sidebar_label: A Combination of iPoS, Multiview-pBFT, and BLS
+id: combination-etc
 ---
 
 

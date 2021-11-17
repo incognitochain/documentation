@@ -1,6 +1,5 @@
 ---
-sidebar_position: 6
-sidebar_label: Multiview - a new approach for PBFT implementation
+id: multiview
 ---
 
 **Multiview: a new approach for PBFT implementation**

@@ -1,6 +1,5 @@
 ---
-sidebar_position: 2
-sidebar_label: Network Incentive - Privacy (PRV) Mining & Distribution
+id: network-incentive
 ---
 
 

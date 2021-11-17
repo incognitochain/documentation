@@ -21,10 +21,18 @@
 
 module.exports = {
   mySidebar: {
+    'intro',
+    'software-stack',
+    'network-incentive'
     'Tech': [
       {
         'Scalability': [
-          'slashing',
+          'Tech/Scalability/scaling-blockchain',
+          'Tech/Scalability/combination-etc',
+          'Tech/Scalability/multiview',
+          'Tech/Scalability/slashing',
+          'Tech/Scalability/staking-flow',
+          'Tech/Scalability/performance',
         ]
       },
     ],

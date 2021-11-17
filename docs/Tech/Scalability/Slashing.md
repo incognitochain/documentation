@@ -1,6 +1,5 @@
 ---
 id: slashing
-title: Slashing
 ---
 
 
