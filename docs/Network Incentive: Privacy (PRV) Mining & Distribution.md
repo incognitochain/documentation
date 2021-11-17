@@ -3,7 +3,7 @@ id: network-incentive
 ---
 
 
-# Network Incentive: Privacy (PRV) Mining & Distribution ▾
+# Network Incentive: Privacy (PRV) Mining & Distribution
 
 Privacy (PRV) is the native coin of Incognito.
 

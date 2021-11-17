@@ -36,6 +36,14 @@ module.exports = {
             'Tech/Scalability/performance',
           ]
         },
+        {
+          'Privacy': [
+            'Tech/Privacy/academic-paper'
+          ],
+        },
+        {
+          'Interoperability': [],
+        },
       ],
     },
   ],
