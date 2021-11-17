@@ -20,7 +20,7 @@
 
 
 module.exports = {
-  mySidebar: {
+  mySidebar: [
     'intro',
     'software-stack',
     'network-incentive',
@@ -37,5 +37,5 @@ module.exports = {
       },
     ],
 
-  },
+  ],
 };
