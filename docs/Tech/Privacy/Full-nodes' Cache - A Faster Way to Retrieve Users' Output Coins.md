@@ -1,8 +1,7 @@
 ---
-layout: default
+id: fullnode-cache
 title: Full-nodes' Cache - A Faster Way to Retrieve Users' Output Coins
-nav_order: 12
-parent: Privacy
+sidebar_label: Full-nodes' Cache - A Faster Way to Retrieve Users' Output Coins
 ---
 
 # Problem Statement

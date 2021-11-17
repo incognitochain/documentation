@@ -38,11 +38,21 @@ module.exports = {
         },
         {
           'Privacy': [
-            'Tech/Privacy/academic-paper'
+            'Tech/Privacy/academic-paper',
+            'Tech/Privacy/intro-privacy-v2',
+            'Tech/Privacy/fullnode-cache',
+            'Tech/Privacy/conversion-tx',
+            'Tech/Privacy/pdex-with-privacy2',
           ],
         },
         {
-          'Interoperability': [],
+          'Interoperability': [
+            'Tech/Interoperability/btc-bridge',
+            'Tech/Interoperability/eth-bridge',
+            'Tech/Interoperability/pethereum',
+            'Tech/Interoperability/bsc-bridge',
+            'Tech/Interoperability/prv-bridge',
+          ],
         },
       ],
     },

@@ -1,5 +1,7 @@
 ---
 id: staking-flow
+sidebar_label: Staking Flow
+title: Staking Flow
 ---
 
 

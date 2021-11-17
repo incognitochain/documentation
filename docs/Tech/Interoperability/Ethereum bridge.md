@@ -1,8 +1,7 @@
 ---
-layout: default
+id: eth-bridge
 title: Ethereum bridge
-nav_order: 15
-parent: Interoperability
+sidebar_label: Ethereum bridge
 ---
 
 

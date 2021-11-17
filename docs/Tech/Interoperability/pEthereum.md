@@ -1,8 +1,7 @@
 ---
-layout: default
+id: pethereum
 title: pEthereum
-nav_order: 16
-parent: Interoperability
+sidebar_label: pEthereum
 ---
 
 

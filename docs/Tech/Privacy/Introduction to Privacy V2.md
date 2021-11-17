@@ -1,9 +1,10 @@
 ---
-layout: default
+id: intro-privacy-v2
 title: Introduction to Privacy V2
-nav_order: 11
-parent: Privacy
+sidebar_label: Introduction to Privacy V2
 ---
+
+
 
 With Privacy V2, everything that happens in Incognito, from sending, receiving, to trading will be private. This improvement is of the utmost importance. 
 Privacy V2 is designed to afford the user the maximum amount of privacy possible. We summarize the improvement details in the following table.

@@ -1,9 +1,9 @@
 ---
 id: combination-etc
+sidebar_label: Consensus - A Combination of iPoS, Multiview-pBFT, and BLS
+title: Consensus - A Combination of iPoS, Multiview-pBFT, and BLS
 ---
 
-
-# Consensus: A Combination of iPoS, Multiview-pBFT, and BLS
 
 Both beacon chain and shard chains use the same consensus mechanism to produce new blocks.
 

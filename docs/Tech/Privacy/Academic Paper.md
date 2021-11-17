@@ -1,5 +1,6 @@
 ---
 id: academic-paper
+title: 'Academic Paper'
 sidebar_label: Academic Paper
 ---
 

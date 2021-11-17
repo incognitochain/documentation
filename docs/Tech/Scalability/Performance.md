@@ -1,9 +1,8 @@
 ---
 id: performance
+sidebar_label: Performance
+title: Performance
 ---
-
-
-# Incognito Performance
 
 We evaluate the performance of Incognito based on its real workload on the mainnet, as well as on simulated workloads.
 

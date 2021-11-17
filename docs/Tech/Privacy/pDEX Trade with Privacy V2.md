@@ -1,8 +1,7 @@
 ---
-layout: default
+id: pdex-with-privacy2
 title: pDEX Trade with Privacy V2
-nav_order: 14
-parent: Privacy
+sidebar_label: pDEX Trade with Privacy V2
 ---
 
 # Introduction

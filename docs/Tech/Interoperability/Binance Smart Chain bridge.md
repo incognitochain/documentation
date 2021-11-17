@@ -1,10 +1,8 @@
 ---
-layout: default
+id: bsc-bridge
 title: Binance Smart Chain bridge
-nav_order: 17
-parent: Interoperability
+sidebar_label: Binance Smart Chain bridge
 ---
-
 
 Binance Smart Chain (BSC for short) supports bridges to 35 other blockchains, which means that if Incognito has a bridge to BSC, it would have a bridge to those 35 blockchain networks as well. Additionally, people have been bridging their crypto assets to BSC enormously according to [BSC’s token tracker](https://bscscan.com/tokens) in order to experience Defi dApps in a faster and cheaper way as compared to its counterpart (a.k.a Ethereum) so imagine if Incognito offers a method to bring anonymity possibility to 1% of BSC’s users who actually care about privacy, it would be a huge leap of the project in new user acquisition as well as processing volume.
 

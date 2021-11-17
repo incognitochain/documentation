@@ -1,9 +1,9 @@
 ---
-layout: default
+id: conversion-tx
 title: Conversion Transactions
-nav_order: 13
-parent: Privacy
+sidebar_label: Conversion Transactions
 ---
+
 
 ## What is a conversion transaction?
 A conversion transaction is a special transaction that converts a list of UTXOs in version 1 into a UTXO in version 2. The UTXOs could be PRV or tokens. 

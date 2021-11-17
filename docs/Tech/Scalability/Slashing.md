@@ -1,6 +1,7 @@
 ---
 id: slashing
-sidebar_label: Slashing 123
+sidebar_label: Slashing
+title: Slashing
 ---
 
 

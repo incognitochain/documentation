@@ -1,8 +1,8 @@
 ---
 id: multiview
+sidebar_label: Multiview - a new approach for PBFT implementation
+title: Multiview - a new approach for PBFT implementation
 ---
-
-**Multiview: a new approach for PBFT implementation**
 
 **Problem**
 

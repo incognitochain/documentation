@@ -1,9 +1,10 @@
 ---
-layout: default
+id: prv-bridge
 title: Ethereum and BSC bridges for PRV
-nav_order: 19
-parent: Interoperability
+sidebar_label: Ethereum and BSC bridges for PRV
 ---
+
+
 
 In the past, PRV - a native token of Incognito was only used inside the Incognito network, but now people can own, send and receive PRV in external networks such as Ethereum and BSC. This still maintains PRV’s hard cap around 100M by using mint & burn mechanism that’s quite similar to the [Incognito-Ethereum trustless bridge](https://we.incognito.org/t/incognito-mode-for-ethereum/53).
 

@@ -1,8 +1,7 @@
 ---
-layout: default
+id: btc-bridge
 title: Bitcoin bridge
-nav_order: 18
-parent: Interoperability
+sidebar_label: Bitcoin bridge
 ---
 
 # Introduction
