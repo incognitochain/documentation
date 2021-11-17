@@ -55,6 +55,13 @@ module.exports = {
           ],
         },
       ],
+      'Developers': [
+        {
+          'SDK': [
+            'Developers/SDK/go-sdk-v2',            
+          ],
+        },
+      ],
     },
   ],
 };

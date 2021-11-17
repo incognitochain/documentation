@@ -1,9 +1,7 @@
 ---
-layout: default
-title: Golang SDK v2
-nav_order: 1
-parent: SDK Overview
-has_children: false
+id: go-sdk-v2
+title: Golang SDK V2
+sidebar_label: Golang SDK V2
 ---
 
 ### Introduction
