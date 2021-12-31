@@ -75,12 +75,12 @@ Thanks to [OTAs](https://we.incognito.org/t/introduction-to-privacy-v2/12776), t
 
 Let's take a look at how the trading process on the Incognito app changes with better anonymity and users' experience.
 
-![image|2048x477, 34%](upload://xAvQUR97WMz14Ptni3v377HvAmD.png)
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/optimized/2X/e/eb68630d3598ccec8feb9565659e73df6d27ed23_2_696x162.png)
 *Figure. To ensure traders' anonymity, the old Incognito app introduced a temporary address where the actual trade is processed. In this approach, 1) the trader had to send the token to trade (say **A**) to the temporary address; 2) the intermediary account burned the token **A**; 3) the pDEX minted the corresponding amount of token to buy (say **B**) for the trade to the temporary account; and finally 4) the temporary account sends the token **B** back to the trade. It requires at least 4 transactions to complete a trade.*
 
 It required at least 4 transactions required to complete a trade. Failures in any of these transactions would lead to users' funds being locked. The introduction of a temporary account on the one hand kept the trader anonymous. But on the other hand, it enforced the trader to trust the one who owned this account.
 
-![image|2048x469, 34%](upload://2yhGx9OcwrGeBUW8nsBRgKjtWun.png)
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/optimized/2X/1/11e4813395c6a51fb2531c08622cad577b6a624b_2_696x159.png)
 *Figure. Trading with Privacy V2 is straightforward. No intermediary account is needed, and it only requires 2 transactions.*
 
 With Privacy V2, there are only 2 transactions needed. This helps reduce the trading time, as well as the probability of failure and asset lock. Furthermore, the removal of the temporary account ensures that users will have no risk of maintaining their assets.

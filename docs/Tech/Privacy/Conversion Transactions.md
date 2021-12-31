@@ -23,16 +23,16 @@ Hide asset type | No
 ## How to convert your UTXOs
 ### Using the Incognito app
 Firstly, navigate to the **Asset** screen.
-![Screen Shot 2021-07-09 at 6.56.48 PM|944x1684, 50%](upload://zPawkhq6pWKKgiLvbe1dsVB1PkK.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/f/fb14da3ee1a9fb66a61b38d63026e84e64de267a.png) 
 
 If you still have UTXOs v1, there will be a little message at the bottom of the screen. Hit on that message. A converting screen will appear.
-![Screen Shot 2021-07-09 at 6.55.59 PM|942x1654, 50%](upload://1wxXBa9BwAXFuR1pywgPY2IXxv2.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/0/0ab00cf13af4f7494985a8832ef21cb166645630.png) 
 
 A list of tokens with UTXOs v1 will be displayed. Hit on **Go to convert screen** button.
-![image|934x1694, 50%](upload://rv46fseuXCVwXNJzzub5o3kRqVe.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/c/c0bdb2bbb11ee9ba5e576f6dc055e65d6d5ed4fc.png) 
 
 Now, click the **Convert** button and wait until the process finishes. When the process is successful, the **Convert** screen will look like the following
-![image|942x1682, 50%](upload://fzwmXjw6ihIlG80yl5P9kfBcvN3.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/6/6d248ef2accb3866855ae5893c3b6930d7e1e2ed.png) 
 
 Note that a conversion transaction consumes at most 30 UTXOs v1 at a time. In case you have a huge number of UTXOs v1, you have to spend an enormous amount of time. Another solution is to consolidate these UTXOs into a smaller set (less than 30) before converting time. The consolidating function is also available on the App as well as on the [CLI tool](https://github.com/incognitochain/incognito-cli#consolidate).
 

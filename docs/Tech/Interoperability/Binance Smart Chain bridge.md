@@ -22,13 +22,13 @@ Also, for BSC’s Defi dApps users who actually care about privacy, the Incognit
 
 The following illustrates the flow of coins that happens over public chains, Binance Smart Chain, and Incognito chain.
 
-![|624x319](upload://gSeNSL5bD0AJl73ux8bpnmjQpYM.png)
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/7/76445c734e31631b219fbe314526fa5a3bc9772c.png)
 
 As illustrated in the typical flow above, to be able to shield coins from public networks like Bitcoin, Ethereum, etc, you need to:
 
 **Step 1**: convert public coins to wrapped coins on Binance Smart chain first. This could be done through the [Binance bridge](https://www.binance.org/en/bridge). Please have a look at [Binance bridge user guide](https://docs.binance.org/smart-chain/guides/bridge-v2.html#user-guide) in case you aren’t familiar with it.
 
-![|624x471](upload://lYiXDuhbxYdTP9F2OeZKemPcUhL.png)
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/9/99fecd16f73dd220d6e6a9e5259d3efb641406bd.png)
 
 **Step 2**: Once having the wrapped coins in your personal wallets (e.g. MetaMask or Trust Wallet), you will be able to shield the wrapped coins to private coins as you used to do with [ETH/ERC20 tokens decentralized shielding](https://we.incognito.org/t/app-v4-3-11-eth-erc20-tokens-decentralized-shielding/12447).
 
@@ -38,7 +38,7 @@ As illustrated in the typical flow above, to be able to shield coins from public
 
 **Step 5**: To convert wrapped coins from BSC back to public coins on a public network, you can use [Binance bridge](https://www.binance.org/en/bridge) again.
 
-![|624x459](upload://nb8RIfv0aupVJge4fUpyPYdJmPO.png)
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/a/a27475f7ba5dfd76178737b19ee623ce30776e8c.png)
 
 ### Technical designs
 

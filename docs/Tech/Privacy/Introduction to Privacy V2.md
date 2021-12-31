@@ -25,7 +25,7 @@ Since this is one of the biggest upgrades of Incognito, we feel that there shoul
 
 Beginning with this post, we will examine Incognito keys. A user establishes his/her ownership of an account through a collection of keys. The user can generate these keys via a single master private key following the below diagram.
 
-![keyset_full|909x674, 75%](upload://hGKcPA6FW5WbHk0uJeye4gQkR0G.png)
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/7/7bf9eebe2529815fc226d53e78a5bf04a357dc9e.png)
 
 To enhance user experience and user-friendliness, these keys are grouped into a set of base58-encoded keys called **KeySet**.
 

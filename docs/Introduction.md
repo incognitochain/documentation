@@ -16,7 +16,7 @@ Existing solutions like Monero, Zcash, and Grin introduced their own version of 
 
 Incognito is designed so users don’t have to choose between their favorite cryptocurrencies and privacy coins. They can have both. They can hold any cryptocurrency and still be able to use it confidentially whenever they want. Privacy needs to be ubiquitous, inclusive, and accessible.
 
-![infographic-01|2048x2048,27%](upload://9fJjICUZMk3l2cmEdVFdvkxtXfr.jpeg) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/optimized/2X/4/40dacac84bd790186813154dc201b77984cfa391_2_552x552.jpeg) 
 
 *Figure 1. Incognito as a privacy hub. It is interoperable with other cryptonetworks via [shielding and unshielding processes ](https://incognito.org/t/shielding-cryptocurrencies-turning-any-cryptocurrency-into-a-privacy-coin/83), which allow cryptocurrencies like BTC and ETH to go incognito and back.*
 

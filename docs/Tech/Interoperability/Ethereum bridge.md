@@ -17,7 +17,7 @@ This post will detail the means by which Incognito enables 100% confidential tra
 
 In this post, we present the Incognito-Ethereum bridge — designed for fully decentralized cross-chain interoperability. Implementations will enable cross-chain communication between the two blockchains, and enable the choice of “incognito mode” for transfers of crypto assets (ETH and ERC20 tokens). Using this bridge, anyone can turn on privacy for their tokens and shield their balances and activity.
 
-![20%20PM|730x391](upload://isIYMDtruu4xW1QQMnGOMZMijDg.png) 
+![](https://we.incognito.org/uploads/default/original/1X/816665e36edb125502e7ed43e54191c7c9b7aa9e.png) 
 
 In the following sections, we will define and explain the functionality of the bridge as well as the mechanism by which such requirements are implemented.
 
@@ -33,7 +33,7 @@ The Incognito chain verifies that proof and extracts information from it in orde
 
 The whole process is illustrated in the following figure:
 
-![27%20PM|696x399](upload://9lbzV60L0d7KuHkdKotjPmHZPii.png) 
+![](https://we.incognito.org/uploads/default/original/1X/4178aca7f3ad38b6c82367636d52ed42e9a11782.png) 
 
 ### Deposit Ether/ERC20 to smart contract
 
@@ -41,7 +41,7 @@ Our decentralized smart contract on Ethereum performs two pretty simple function
 
 Our decentralized smart contract on Ethereum performs two pretty simple functions in the aforementioned deposit process — one for Ether and one for ERC20.
 
-![32%20PM|722x230](upload://gfZoY6aUO1dNjE8o8R5aYGWzfTw.png) 
+![](https://we.incognito.org/uploads/default/original/1X/71f184721ce138527a687e076df6d8675edbd1f6.png) 
 
 When those functions are called, two important pieces of information ( *incognito address*  and  *deposit amount* ) will be logged in anticipation of the related transactions being confirmed on the Ethereum network. In the following section, we explain how we use this information in minting private tokens.
 
@@ -68,7 +68,7 @@ In either (1a) or (1b), Incognito must obtain a valid Ethereum header in order t
 
 The verification process is illustrated in the following figure:
 
-![39%20PM|693x429](upload://s7FNjYN2tkNcZZnPbnjiPGqYFSk.png) 
+![](https://we.incognito.org/uploads/default/original/1X/c51af27382200785c34b4027e20bcbe985a0b80c.png) 
 
 ### Mint private tokens
 
@@ -82,13 +82,13 @@ Withdrawing is the process of converting pETH (or pERC20) on Incognito to ETH (o
 
 The following diagram shows the whole process:
 
-![44%20PM|735x482](upload://pnlQ7Q9el4cLm7cZGVy6Y0bx2bc.png) 
+![](https://we.incognito.org/uploads/default/original/1X/b1da1fbd673b8deab7608032fb568c6805334766.png) 
 
 ### Burn private tokens
 
 At any time, users can create a special transaction on Incognito called  **BurningRequest**  to initiate the withdrawal process. This tx sends an arbitrary amount of private tokens to the  **BurningAddress** . Assets locked in this address cannot be moved, effectively destroying them. Along with the number of tokens to be withdrawn, users also provide a valid receiving address for the corresponding asset on Ethereum.
 
-![49%20PM|712x332](upload://s78PpmQg6NMVHe2uZC3DzLEBe5e.png) 
+![](https://we.incognito.org/uploads/default/original/1X/c50b8f65d2a4e48b5e701341aa12fb6514121a34.png) 
 
 Here, TokenID is the private token id on Incognito chain, which will be used to derive the corresponding Ethereum asset (ETH or ERC20 contract address). RemoteAddress is the aforementioned address that will receive the Ethereum asset.
 
@@ -114,19 +114,19 @@ Additionally, the contract also needs to verify that this proof is valid and sig
 
 These steps are illustrated in the diagram below:
 
-![55%20PM|737x407](upload://4MrI5wej6JF5Tkjn6vZ1ONJiggT.png) 
+![](https://we.incognito.org/uploads/default/original/1X/2182aaf88e73bbee625c77cc492c931803a67d77.png) 
 
 The code below shows the first step: verifying that the instruction (with hash  *instHash* ) is in merkle tree (with root  *instRoot* ), given the merkle path ( *instPath* ).
 
-![00%20PM|715x242](upload://yYdm1zCUaj3cF5EZbSbgUvyroil.png) 
+![](https://we.incognito.org/uploads/default/original/1X/f51872231c68da9ce3537e6742f3a0e3c0150039.png) 
 
 For the 2nd step, we need to recompute the hash of the block. On Incognito, block hash is computed by hashing the root of the merkle tree (storing all instructions) with the hash of the block body (containing all transactions). With this data, the contract can easily verify that merkle root X is in a block with hash Y.
 
-![04%20PM|698x87](upload://kf0GbkX1qLDDqVX62t7DV5DseQG.png) 
+![](https://we.incognito.org/uploads/default/original/1X/8ddddf0c86cb31bee7906aeb8939e3056c452faa.png) 
 
 Finally, the aggregated signature helps to prove that block hash Y has been approved by a group of validators Z. Note that since the contract already stores validator public keys, there is no need to provide them when validating a burn proof. The code below shows how we check if a sufficient number of validators (at least ⅔ + 1) signed the block.
 
-![08%20PM|710x264](upload://4YcNejNUHI7NUQWNLCHbc1j3oeP.png) 
+![](https://we.incognito.org/uploads/default/original/1X/22d6f6fff696eb229f882ff2adcbc383cb13126f.png) 
 
 The Incognito Vault contract is open-source here: https://github.com/incognitochain/bridge-eth/blob/master/bridge/contracts/vault.sol
 
@@ -136,7 +136,7 @@ We deployed the Incognito Vault contract on Ethereum’s Kovan testnet and confi
 
 As an example, we deposited some tokens (with [this tx](https://kovan.etherscan.io/tx/0x31f63654eef8d28bc1ce14bb13c48c93ce1a2573caa876e5ed5483fa47418070)) to the Vault and withdrew some of it by providing a burn proof (in [this tx](https://kovan.etherscan.io/tx/0x2ade11339d4656c908fde0a94dddcd7e33a84a4c07f204e046253e6ebbbe4db2)). To obtain this proof, we simply need to make an RPC call to an Incognito fullnode (http://test-node.incognito.org/). The result of the RPC call can be viewed [here](https://gist.github.com/0xbunyip/a8b9bfe4219139716eb464fa41febe53) and is partly shown in the image below:
 
-![13%20PM|757x422](upload://A34oa2R4rdwhkGnqdqEIPB3ktT.png) 
+![](https://we.incognito.org/uploads/default/original/1X/0413363345edb5e5157577c64e4019726055f365.png) 
 
 ## **Swapping committee**
 
@@ -146,4 +146,4 @@ This is fairly simple to do by utilizing the tools discussed above. Every time a
 
 The following diagram illustrates this process:
 
-![17%20PM|687x342](upload://v2nfh4j6xTTKHqmcz7D1UyUty6C.png) 
+![](https://we.incognito.org/uploads/default/original/1X/d9881eaa0db1e8647e15ecb4b70ee729f1cf3ffa.png) 

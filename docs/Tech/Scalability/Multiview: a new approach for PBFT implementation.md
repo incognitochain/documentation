@@ -20,7 +20,7 @@ Requirements for the nodes are that they are deterministic and start in the same
 
 Phases in Incognito’s Multiview PBFT
 
-![|448x207](upload://hTgCkPLzPDUlbq5OvzZmNw4lJWF.png)
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/7/7d6451e8b880b4cdfe62c4a9bc09ec492fe9d0c1.png)
 
 PROPOSE PHASE
 
@@ -55,16 +55,16 @@ To achieve consensus without agreement on view change, nodes in Incognito’s co
 
 Let
 
-![|529x161, 100%](upload://kADpYc6aktKN7nnOURsU9OheYdz.png)
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/9/904fa80c9b26d7902780db6a87b2fe9f308f14d9.png)
 
 Two vote rules for:
 
 1. Branches with the same height
 2. Branches with different heights
 
-**![|624x160](upload://mnn3KzkYhPyxKjRq01aqIe969v3.png)**
+**![|624x160](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/9/9cd42be06187347aed55047c1035374256d73549.png)**
 
-**![|624x347](upload://8QWxEjWhkNNzqJGCbjPYgNQENEa.png)**
+**![|624x347](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/3/3e0d81e84a78cbbf0f9dc3bdd37b005e4c6d805e.png)**
 
 
 
@@ -73,11 +73,11 @@ Two Propose rules for:
 1. Branches with the same height
 2. Branches with different height
 
-**![|624x451](upload://sqNBVkQcRj64i3wXUqCUAfW2Mei.png)**
+**![|624x451](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/c/c7446c397da92d5a223d000f07272ff8a00bbee6.png)**
 
 **Lemma 1**. (Finality 1) If two consecutive blocks B_(n) & B_(n+1) on the same branch are committed in two consecutive time slots, then block B_(n) is finality.
 
-![|624x181](upload://sKB7keTC0tyRSwhuwhkOP4Bik2L.png)
+![|624x181](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/c/c9815b7413a5318f4ebe0d9ac8fe3b6b31c661fb.png)
 
 *Proof*. When block n is committed at time slot t, and block (n+1) is proposed at time slot (t+1), this implies that block (n+1) is proposed for the first time. This also implies that > 2/3 members received, agreed and voted for it. This means any further proposed block with height (n+1) will not get enough votes to commit, following Vote Rule 1. And following Vote Rule 2, no branch can grow any longer than the one with block n.
 
@@ -113,7 +113,7 @@ Consider the worst case scenario where two chains are growing to infinity. In or
 
 Let N be the number of participants. When network traffic is peaking, assume that the probability of successfully transmitting a message between two participants is 0.5. The probability of a participant not receiving any messages in a single round is then (0.5^­N­)^2. This probability is negligible when N is large. Moreover, the probability of a participant not receiving any messages in x rounds is (0.5­^N­)^(2x). This is exponentially decreased when the number of rounds is increasing. These conditions above are thus impossible to hold through many rounds. In order words, the liveness property is guaranteed.
 
-![|536x131, 100%](upload://inQLUhPn3UChm5UgaX19BsLd5Dc.png)
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/8/80d957f5646aece4d10c378c1a41afee2e57aa5a.png)
 
 *Fig 1*. Fork case
 

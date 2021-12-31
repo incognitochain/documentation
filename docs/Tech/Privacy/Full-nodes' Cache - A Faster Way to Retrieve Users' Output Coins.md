@@ -19,7 +19,7 @@ One approach is for full-nodes to cache a user's output coins once the user subm
 
 Next, we describe in detail each of these modes of operation and gives a brief comparison between the two.
 
-![image|2048x913, 33%](upload://8Re4gIF1wmKIVXEgU2Yhc55RaSw.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/optimized/2X/3/3e15b00d91639e437804a80f8d0abe5b7c49bee4_2_675x301.png) 
 *Figure. For the passive caching approach, any output coins received before your OTAKey is submitted will be "lost" in the view of the full-node. Instead, in the later approach, they will all be recoverable no matter when you submit your OTAKey.*
 
 ## The Default Mode

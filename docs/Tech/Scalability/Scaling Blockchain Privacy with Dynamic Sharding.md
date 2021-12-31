@@ -13,7 +13,7 @@ We implement sharding on privacy transactions to increase throughput for Incogni
 
 Incognito is designed as a network of blockchains. It has a single beacon chain (the “coordinator”) and N shard chains (the “workers”), which produce blocks in parallel. All shards work in parallel and are synchronized by beacon block time, which is divided into equal epochs.
 
-![image%20(20)|682x364](upload://9WH1U8ErTNiL7kwQEEUOoWE4f8h.jpeg) 
+![](https://we.incognito.org/uploads/default/original/1X/45b6122ba6a1272f12f9e9663c076e999234a75d.jpeg) 
 
 *Figure 1. Sharding on privacy transactions. Incognito throughput scales out linearly with the number of shards.*
 
@@ -23,7 +23,7 @@ Shards are organized by the last byte of sender addresses. Each shard has its ow
 
 Every time a shard block is created, the beacon committee will verify and insert the valid block header into the beacon chain. If the block is not valid, the beacon will send the proof to all other shards, to vote to slash the misbehaving shard committee.
 
-![image%20(21)|682x462](upload://qBxvIa2SQqH2igqbYxDPSA2DVhb.jpeg) 
+![](https://we.incognito.org/uploads/default/original/1X/ba76e19c187dc623376c526849c20baf7785ec75.jpeg) 
 
 *Figure 2. Shard Chains*
 
@@ -112,7 +112,7 @@ The probability of conquering the chain is extremely low, even if an individual 
 
 The implementation is mainly in the *Blockchain* component in the Incognito architecture.  
 
-![image%20(25)|599x990](upload://spvtjiCtGxkncnH7pPKRI3NMGz5.png) 
+![](https://we.incognito.org/uploads/default/original/1X/c71f04a76c6b78038a9e54b55fe9d670fbfd28d7.png) 
 
 *Figure 5. The layered Incognito architecture.*
 

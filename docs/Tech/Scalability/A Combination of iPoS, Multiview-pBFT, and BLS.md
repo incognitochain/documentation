@@ -59,7 +59,7 @@ When the block proposer proposes a new block, all the validators in the current 
 
 The implementation is mainly in the *Consensus* component in the Incognito architecture.
 
-![599x990](upload://spvtjiCtGxkncnH7pPKRI3NMGz5.png) 
+![](https://we.incognito.org/uploads/default/original/1X/c71f04a76c6b78038a9e54b55fe9d670fbfd28d7.png) 
 
 *Figure 5. The layered Incognito architecture.*
 

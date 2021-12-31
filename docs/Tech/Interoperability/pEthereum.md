@@ -22,7 +22,7 @@ With pEthereum, developers can program smart contracts that are not just decentr
 
 In November 2019, we first [proposed the idea](https://ethresear.ch/t/incognito-mode-for-ethereum/6232) to the Ethereum community. Since then, 80+ ERC20 tokens with a [total value of $3M+](https://etherscan.io/address/0x3c8ec94213f09A1575f773470830124dfb40042e) have been shielded via the [Incognito-Ethereum trustless bridge](https://incognito.org/t/incognito-mode-for-ethereum/53). This is a strong validation that Ethereum users want privacy.
 
-![Screen Shot 2020-06-17 at 1.48.34 PM|1078x441,66%](upload://2ZUDqDpwGUHXNYFZLtRSnBHjR2d.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/1/150404acad210581524481585873ed28b1f55895.png) 
 Source: [Etherscan](https://etherscan.io/address/0x0261DB5AfF8E5eC99fBc8FBBA5D4B9f8EcD44ec7#analytics), June 6, 2020
 
 ## Core concepts
@@ -45,7 +45,7 @@ Shielding is the process of turning a public ERC20 token into its privacy counte
 
 Following is an overview of the SHIELD instruction flow:
 
-![Screen Shot 2020-04-22 at 6.14.03 PM|785x543,87%](upload://rqxmBehedvjuUPBGv53KglGkTsS.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/c/c03aaa5c7c843f9ee0f3688143ecc2611c39b23a.png) 
 
 1. A user deposits some amount of an ERC20 token into the Broker smart contract. Once the transaction is confirmed on Ethereum, the user has a deposit proof.
 
@@ -59,7 +59,7 @@ Unshielding is the reverse process of shielding: turning privacy coins back into
 
 Following is an overview of the UNSHIELD instruction flow:
 
-![Screen Shot 2020-04-22 at 6.14.14 PM|789x543,87%](upload://ublspyywbU34zv4jLz9w8Q1nERy.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/d/d3898e4a93566b398a1cbc0e68ace68f7785c470.png) 
 
 1. A user initiates an unshielding transaction on Incognito, with information about which privacy coins they want to unshield and the amount. Once the transaction is confirmed on Incognito, the user has a burn proof.
 
@@ -75,7 +75,7 @@ Deploying is the process of moving funds from Incognito to Ethereum so that user
 
 Following is an overview of the DEPLOY instruction flow:
 
-![Screen Shot 2020-04-22 at 6.14.25 PM|790x545,87%](upload://e6k87OSgYrbWhv9wpYpElrBbcqN.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/6/62d5761eff5d5bf56dea2e682ceeec40850fa485.png) 
 
 1. A user confidentially initiates a deploy transaction on Incognito with information about which privacy coins they want to deploy and the amount. Once the transaction is confirmed on Incognito, the user has a deploy proof, which is similar to a burn proof.
 
@@ -89,7 +89,7 @@ Executing is the process of running a function call of an Ethereum smart contrac
 
 The following is an overview of the EXECUTE instruction flow:
 
-![Screen Shot 2020-04-22 at 6.14.41 PM|635x579,109%](upload://w09HUWNuBCdW76nOCUAicXKWiv7.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/e/e04a192d76e9b608fb329a6af207549ad7f5ef81.png) 
 
 1. A user confidentially signs and sends an EXEC instruction from a pApp on Incognito, with information about which counterpart dApp on Ethereum they want to run and the parameters.
 
@@ -113,7 +113,7 @@ Undeploying is the reverse process of deploying: moving funds from Ethereum to I
 
 Following is an overview of the UNDEPLOY instruction flow:
 
-![Screen Shot 2020-04-22 at 6.14.56 PM|786x543,87%](upload://aS5X6qMM6d8f47TZ8iEv4FtdFlB.png) 
+![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/4/4c332f9eb324e8f582a5c29be77661607d7109a7.png) 
 
 1. A user confidentially creates an UNDEPLOY instruction, with information about which privacy coins they want to undeploy and the amount.
 

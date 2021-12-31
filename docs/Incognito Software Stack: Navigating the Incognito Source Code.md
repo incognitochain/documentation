@@ -22,7 +22,7 @@ The Incognito software stack is designed in five layers.
 
 We also built several infrastructure tools to support network monitoring, visualization, and deployment.
 
-![541x890](upload://wV1JSY5WVRYNPKZFpXWZbcJEsI5.png) 
+![](https://we.incognito.org/uploads/default/original/1X/e6b7dc9937de229953b1c9056896e8c1641da36d.png) 
 
 *Figure 1. The layered Incognito architecture.*
 

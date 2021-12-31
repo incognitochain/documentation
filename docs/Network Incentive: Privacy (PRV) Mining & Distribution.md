@@ -25,7 +25,7 @@ Proof-of-Stake networks often heavily pre-allocate tokens for the team, investor
 
 95M of the 100M PRV total supply is mined through block rewards. The total block reward for the first year is 8,751,970 PRV. Block rewards are reduced by 9% for every subsequent year. PRV will be fully mined after 40 years.
 
-![image%20(33)|587x472](upload://zdUYnzL8aG18Pe5Kzu0nDQhfFB8.png) 
+![](https://we.incognito.org/uploads/default/original/1X/f6dee108e2da6db34cd1cba91d6a0d9a16716dfa.png) 
 
 *Figure 1. PRV block rewards over time*
 
