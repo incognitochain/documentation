@@ -22,7 +22,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/khanhlh-incognito/incognito-document-prod/tree/master',
+          editUrl: 'https://github.com/incognitochain/documentation',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -34,6 +34,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark'
+      },
       navbar: {
         title: 'docs.incognito',
         logo: {
@@ -49,7 +52,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/khanhlh-incognito/incognito-document-prod/tree/master',
+            href: 'https://github.com/incognitochain/documentation',
             label: 'GitHub',
             position: 'right',
           },
@@ -85,11 +88,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Reddit',
                 href: 'https://www.reddit.com/r/IncognitoChain/',
-              },
-              {
-                label: 'Facebook',
-                href: '#',
-              },
+              }
             ],
           },
           {
