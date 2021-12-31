@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'The new incognito.org document site',
   tagline: 'testing',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.incognito.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
