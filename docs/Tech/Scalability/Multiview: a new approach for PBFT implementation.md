@@ -136,10 +136,12 @@ Let N be the number of participants. When network traffic is peaking, assume tha
 
 **Multiview PBFT vs Tendermint[1]**
 
-<img src="https://user-images.githubusercontent.com/37530661/169453559-3904343b-bc27-48b9-83a2-ce366281324c.png" width="425">
+![image](https://user-images.githubusercontent.com/37530661/169453559-3904343b-bc27-48b9-83a2-ce366281324c.png)
+
 *Fig 5.* Tendermint operation in normal cases
 
 ![image](https://user-images.githubusercontent.com/37530661/169452512-e244c7a0-bd3f-4898-9259-d1e42e551c57.png)
+
 *Fig 6.* Multiview PBFT operation in normal cases
 
 |   | Tendermint  | Multiview  |
