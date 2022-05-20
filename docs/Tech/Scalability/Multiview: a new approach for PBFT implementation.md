@@ -54,8 +54,7 @@ Vote rules & Propose rules
 To achieve consensus without agreement on view change, nodes in Incognito’s committee have to use the following Vote rules and Propose rules
 
 Let
-
-![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/9/904fa80c9b26d7902780db6a87b2fe9f308f14d9.png)
+![image](https://user-images.githubusercontent.com/37530661/169451843-f78100da-db67-4042-afba-eac84e3f2069.png)
 
 Two vote rules for:
 
@@ -77,15 +76,33 @@ Two Propose rules for:
 
 **Lemma 1**. (Finality 1) If two consecutive blocks B_(n) & B_(n+1) on the same branch are committed in two consecutive time slots, then block B_(n) is finality.
 
-![|624x181](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/c/c9815b7413a5318f4ebe0d9ac8fe3b6b31c661fb.png)
+![image](https://user-images.githubusercontent.com/37530661/169451999-49afc5d1-9441-4d3b-be18-b942bb0111c1.png)
 
 *Proof*. When block n is committed at time slot t, and block (n+1) is proposed at time slot (t+1), this implies that block (n+1) is proposed for the first time. This also implies that > 2/3 members received, agreed and voted for it. This means any further proposed block with height (n+1) will not get enough votes to commit, following Vote Rule 1. And following Vote Rule 2, no branch can grow any longer than the one with block n.
 
 **Lemma 2**. (Finality 2) If two consecutive blocks B_(n) & B_(n+1) on the same branch are committed in time slots t and (t+i), respectively, where B_(n+1) is first proposed at time slot (t+1), and this block is reproposed at every time slot t+2, t+3, ..., t+i then block B_(n) is finality.
 
-![|624x195](https://lh4.googleusercontent.com/SLYzmlftgni6ptYnbFNXKJM9U8c4x1J64QFzO8Jco8GHF7zn0Ea7W1m2BfYwa3Gix5_rOgNU3xL8Gq4LKZkJ2hV_b5X3FXv-MLMi666vKRXnq4Jjb502_40y4Kl2drdKjU5202D5)
+![image](https://user-images.githubusercontent.com/37530661/169452106-959b4cd3-c86b-46ef-b612-23c537303f56.png)
 
 *Proof.* Since the block n is committed at t, and block (n+1) is committed at (t+i) with time slot (t+1), meaning that block (n+1) is first proposed at (t+1). This implies that block (n+1) with time slot (t+1) is the latest one, and > 2/3 members received, agreed and voted for it. This means any further proposed block (n+1) won't get enough votes to commit by Vote Rule 1. Moreover, during the time slot t+1, t+2,.. , t+i, no other blocks rather than the block (n+1) with time slot (t+1) are proposed or committed. Due to Vote Rule 2, no branch can grow any longer than this one.
+
+**Finality Theorem**
+IF a block at height h is first proposed and committed in the same time slot, THEN it is finalized.
+
+IF a block at height h is first proposed in the time slot t, it is committed in the time slot t+n, for n > 1, and it is re-proposed in the consecutive time slots: t+1, t+2,…, t+n, THEN it is finalized.
+
+*Proof.*
+
+By proposing rules 1 and 2, the proposed block at height h is always in the longest chain (i).
+
+Following vote rule 1, any order block at height h cannot be committed because it cannot collect enough votes. In order words, the chain cannot create multiple branches at height h (ii).
+
+Therefore, to be committed, any new proposed block must append to this block. No branch can grow any longer than this one. (iii).
+
+(i), (ii), & (iii) imply Finality Theorem.
+
+![image](https://user-images.githubusercontent.com/37530661/169452271-3dd06119-98c1-44ad-b66a-0c2b5d2fe06b.png)
+*Fig 3.* Example finality cases by the finality theorem.
 
 **Analysis**
 
@@ -117,20 +134,29 @@ Let N be the number of participants. When network traffic is peaking, assume tha
 
 *Fig 1*. Fork case
 
-To summarize view change approach vs multiview approach,
+**Multiview PBFT vs Tendermint[1]**
 
-1. In the common case: a block is committed, View Change Approach (VCA) means finality, Multiview PBFT gets finality one block later.
-2. In the abnormal case: if there are 1/3 validators or more offline, both approaches fail to commit any new blocks.
-3. Network peaking: if more than ⅓ validators’ vote messages arrive late, in view change approach, participants repeatedly communicate to change to the new view, so no block can be committed. In a multiview approach, a block can be committed and appended to the chain.
+<img src="https://user-images.githubusercontent.com/37530661/169453559-3904343b-bc27-48b9-83a2-ce366281324c.png" width="425">
+*Fig 5.* Tendermint operation in normal cases
 
-The approach of multiview PBFT has a natural philosophy. The consensus respects the majority group, the powerful node - which can commit blocks during bursts of network traffic - can advance the chain to new height during heavy network traffic.
+![image](https://user-images.githubusercontent.com/37530661/169452512-e244c7a0-bd3f-4898-9259-d1e42e551c57.png)
+*Fig 6.* Multiview PBFT operation in normal cases
+
+|   | Tendermint  | Multiview  |
+|---|---|---|
+| Total messages  | n + 2n^2  | n + n^2  |
+| Number of phases to commit | 3  | 2  |
+| Throughput (T being the delay in transferring a message)  | 1/(3T)  |  1/(2T) |
 
 **Conclusion**
 
 The multiview PBFT approach is simple but has many advantages:
 
-* Avoids the overhead of synchronization when view-change condition is triggered.
-* When a minor number of participants can commit a block, the view change approach will sync for the new view. A multiview approach has a chance to continuously append the new block to the chain as long as the next proposer can commit the latest block.
+- In normal cases, Multiview PBFT increases throughput by 33% over Tendermint, and the total number of exchange messages decreases nearly 50%. Both Tendermint and Multiview PBFT can achieve instant finality in one block.
+
+- Network peaking: In the Tendermint approach, if more than ⅓ of validator vote messages arrive late, participants will repeatedly communicate to change to the new view and no block can be committed. In a Multiview approach, a block can be committed and appended to the chain.
+
+The approach of Multiview PBFT has a natural philosophy. The consensus respects the majority group; the powerful node – which can commit blocks during bursts of network traffic – can advance the chain to new height during heavy network traffic.
 
 **Reference**
 
