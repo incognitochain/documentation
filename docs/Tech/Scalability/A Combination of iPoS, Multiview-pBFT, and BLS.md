@@ -30,6 +30,17 @@ Tendermint, a popular implementation of pBFT, requires participants to have the 
 ## Validator Life Cycle
 
 * Common pool: new staking node, waiting to be assigned to a particular shard
+* Sync pool: sync the assigned shard’s data
+* Substitute pool: node finished sync its data, queueing in the substitute list of its shard
+* Committee pool: validate and vote blocks
+  * 4 states: new (in common pool), candidate (in sync pool), substitute (in substitute pool), committee (in committee).
+image
+image
+974×421 17.4 KB
+
+Figure 1. Life cycle
+
+* Common pool: new staking node, waiting to be assigned to a particular shard
 * Probation pool: penalized node, due to slashing rules
 * Shard pool: node assigned to a shard, queueing in the substitute list of the shard
   * 4 node states: candidate (in common pool), substitute (in shard pool), committee (in committee), probation (in probation pool).
@@ -37,17 +48,6 @@ Tendermint, a popular implementation of pBFT, requires participants to have the 
 **![|624x563](https://lh6.googleusercontent.com/_e-TBA-EzeqNNWavFEQArdyzMlzTa8JCrahvk25sqPzRaB42qWXhr_yPd3uTS7yGkQKQD42kTgMtl0BDnJ6zl7Z-j1Wd6wv825DRh03vi9m1iBRrJnGfC5ICZC8y05Hh4b7QNrLZ)**
 *Figure 1. Life cycle*
 
-## Slashing Rules
-
-When it comes to slashing, we prefer a light punitive approach – i.e. a slashing policy that does not deduct any PRV from the stake/reward of the validators. However the policy must effectively prevent misbehavior and unreliability.
-
-Let W = size of substitutes / (0.1* committee size): the number of epochs that a substitute has to wait before joining the committee.
-
-|Number of blocks in an epoch which missed vote (1 epoch = 350 blocks)|Minimum # of epochs node has to wait before rejoining the substitutes list|
-| --- | --- |
-|50-150|1W in the probation pool|
-|151-300|2W in the probation pool|
-|> 300|3W in the probation pool, then force unstake|
 
 ## BLS-based Aggregate Multi-Signatures from Pairing
 
