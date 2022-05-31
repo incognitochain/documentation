@@ -20,7 +20,7 @@ Requirements for the nodes are that they are deterministic and start in the same
 
 Phases in Incognito’s Multiview PBFT
 
-![](https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/7/7d6451e8b880b4cdfe62c4a9bc09ec492fe9d0c1.png)
+<img src="https://incognito-discourse.s3-us-west-2.amazonaws.com/original/2X/7/7d6451e8b880b4cdfe62c4a9bc09ec492fe9d0c1.png" width="625"/>
 
 PROPOSE PHASE
 
@@ -101,7 +101,7 @@ Therefore, to be committed, any new proposed block must append to this block. No
 
 (i), (ii), & (iii) imply Finality Theorem.
 
-![image](https://user-images.githubusercontent.com/37530661/169452271-3dd06119-98c1-44ad-b66a-0c2b5d2fe06b.png)
+<img src="https://user-images.githubusercontent.com/37530661/171086702-1e699abd-1f71-403e-90dd-741523426fbd.png" width="625"/>
 *Fig 3.* Example finality cases by the finality theorem.
 
 **Analysis**
