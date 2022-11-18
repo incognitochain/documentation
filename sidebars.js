@@ -58,8 +58,19 @@ module.exports = {
       'Developers': [
         {
           'SDK': [
-            'Developers/SDK/go-sdk-v2',            
+            'Developers/SDK/go-sdk-v2',
           ],
+          'API': [
+            {
+              'Partners': [
+                {
+                  'CoinGecko': [
+                      'Developers/API/Partners/CoinGecko/spot-dex-exchange'
+                  ]
+                }
+              ]
+            }
+          ]
         },
       ],
     },
