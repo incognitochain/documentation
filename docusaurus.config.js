@@ -120,4 +120,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         darkTheme: darkCodeTheme,
       },
     }),
+
+  scripts: [{src: 'https://plausible.incognito.org/js/plausible.js', defer: true, 'data-domain': 'docs.incognito.org'}],
 });
