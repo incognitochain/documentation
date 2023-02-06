@@ -70,6 +70,9 @@ module.exports = {
                 }
               ]
             }
+          ],
+          'Tutorials': [
+            'Developers/Tutorials/tutorial-puniswap'
           ]
         },
       ],
