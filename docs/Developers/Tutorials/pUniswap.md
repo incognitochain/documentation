@@ -32,7 +32,7 @@ First thing we need to do is implementing an UI for our pUniswap’s swap form. 
 
 If Incognito wallet extension hasn’t been installed yet, the CTA button would navigate user to the [Chrome Store](https://chrome.google.com/webstore/detail/incognito-wallet/chngojfpcfnjfnaeddcmngfbbdpcdjaj) for install. After installed, the CTA button will be used for connecting wallet by opening the wallet extension popup as follows:
 
-```js
+```ts
 export const getIncognitoInject = () => window.incognito;
 
 const showPopup = () => {
@@ -50,7 +50,7 @@ const showPopup = () => {
 
 After wallet connected, we will need to display user’s account information on the UI. A sample of account data structure should be:
 
-```solidity
+```ts
 type Balance = {
   amount: string;
   id: string; // tokenID
@@ -70,7 +70,7 @@ type AccountInfo = {
 
 With the above data structure, we use the following functions to get user’s account information that we can use to display on our UI.
 
-```js
+```ts
 const incognito = getIncognitoInject();
 
 // return extension state locked unlocked
@@ -101,7 +101,7 @@ const requestIncognitoAccount = async () => {
 
 Next, we create a swap payload from the UI’s inputs. The data structure of the payload along with its sample should look like:
 
-```solidity
+```ts
 type Payment {
   Amount: string;
   Message: string; // optional
@@ -163,13 +163,13 @@ A sample payload of swapping pUSDT for pMatic via Uniswap in Polygon network:
 A notable information in the sample payload above is ExternalCalldata that is used to call Uniswap’s swap function. The calldata can be acquired with the BuildCallDataUniswap function, its full implementation can be found at: https://github.com/incognitochain/puniswap-tutorial/blob/main/bridge/build_calldata.go
 
 In the bridge folder use this command to try the function:
-```sh
+```bash
 go test -timeout 30s -run ^TestBuildCallDataUniswap$ bridge -v
 ```
 
 To conclude the step 1, we will need to sign a transaction for the swap payload with the wallet extension and then broadcast the signed one to Incognito blockchain:
 
-```js
+```ts
 // Note: get OTA receiver via function requestIncognitoAccount
 // NetworkID: ETH: 1, BSC: 2, PLG: 3, FANTOM: 4, AURORA: 5, AVALANCHE: 6
 // return tx with txHash, rawData
@@ -291,7 +291,7 @@ To extract a Reshield event emitted from the swap transaction, the Bridge needs 
 
 In the bridge folder, we can use this command to try the above function:
 
-```sh
+```bash
 go test -timeout 120s -run ^Test_GetProof$ bridge -v
 ```
 
